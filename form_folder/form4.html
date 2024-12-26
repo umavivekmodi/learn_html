@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about number and email and password input type</title>
+  </head>
+  <body>
+    <form>
+      <label for="date">join date:-</label>
+      <input
+        type="date"
+        value="1995-08-12"
+        name="joining_date"
+        id="date"
+      /><br />
+
+      <label for="time&date">date&time of join</label>
+      <input
+        type="datetime"
+        name="date&time_of_join"
+        value="1998-05-05 10:45 PM"
+        id="time&date"
+      /><br />
+
+      <label for="current_time">Local time:-</label>
+      <input
+        type="datetime-local"
+        name="local_time"
+        id="current_time"
+        value="10:15 AM"
+      /><br />
+
+      <label for="month">enter the month of join:-</label>
+      <input type="month" value="January 2024" id="month" /><br />
+
+      <!-- cant get by default value  -->
+
+      <label for="">enter week of holidays:-</label>
+      <input type="week" value="holidays" name="Full_week" /><br />
+
+      <label for="number">age</label>
+      <input
+        type="number"
+        name="age"
+        value="18"
+        id="age"
+        max="45"
+        min="18"
+        required
+      /><br />
+
+      <label for="tel">telephone number</label>
+      <input
+        type="tel"
+        value="+91 4154887567"
+        name="telephone"
+        id="tel"
+        maxlength="10"
+      /><br />
+
+      <label for="email">enter email</label>
+      <input
+        type="email"
+        name="E-mail"
+        value="example@23.gmail.com"
+        id=""
+      /><br />
+
+      <label for="password">enter password</label>
+      <input
+        type="password"
+        value=""
+        name="password"
+        id="password"
+        required
+      /><br />
+
+      <input type="submit" name="button" value="button" id="" />
+    </form>
+  </body>
+</html>

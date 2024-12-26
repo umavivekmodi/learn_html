@@ -6,7 +6,7 @@
     <title>about form</title>
   </head>
   <body>
-    <form action="img.html" method="get">
+    <form action="img.html" method="get" enctype="multipart/form-data">
       <label for="full_name">full name</label>
       <input
         type="text"
@@ -131,6 +131,7 @@
       >
       <input type="checkbox" name="hobby" id="football" />
       <label for="football">football</label><br />
+
       <input type="checkbox" name="hobby" id="" /> reading books
       <input type="checkbox" name="hobby" id="" /> singing<br />
 
@@ -166,8 +167,8 @@
       <input type="hidden" name="hidden_data" /> it can't show<br />
 
       <label>gender</label>
-      <input type="radio" name="gender" />male
-      <input type="radio" name="gender" id="" /> female <br />
+      <input type="radio" name="gender" value="male" />male
+      <input type="radio" name="gender" value="female" /> female <br />
 
       <label for="range">range</label>
       <input type="range" min="10" max="95" name="range" /><br />
@@ -185,6 +186,9 @@
 
       <label for="submit"></label>
       <input type="submit" name="submit" id="submit" value="Login" /><br />
+
+      <label for="text">for text</label>
+      <input type="text" value="text" placeholder="enter your name" />
     </form>
   </body>
 </html>
