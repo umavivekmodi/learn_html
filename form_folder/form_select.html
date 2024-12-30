@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="my">
+      <select name="fruits" id="select">
+        <option value="apple">Apple</option>
+        <option value="pear">Pear</option>
+        <option value="banana">Banana</option>
+      </select>
+
+      <input type="submit" value="submit" />
+    </form>
+
+    <script>
+      let form = document.forms.my;
+      form.select.options[2].selected = true;
+      select.selectedIndex = 2;
+      console.log(select.value);
+    </script>
+  </body>
+</html>

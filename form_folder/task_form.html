@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task form</title>
+  </head>
+  <body>
+    <form name="my_task">
+      <h3>Personal information</h3>
+      <label for="f_name">First Name:</label>
+      <input
+        type="text"
+        name="f_name"
+        id="f_name"
+        value="f_name"
+        placeholder="Enter Your First Name"
+        autofocus
+      /><br />
+
+      <label for="l_name">Last Name:</label>
+      <input
+        type="text"
+        name="l_name"
+        id="l_name"
+        value="l_name"
+        placeholder="Enter Your Last Name"
+      /><br />
+
+      <label for="dob">dob:</label>
+      <input type="date" name="date" id="date" value="yyyy-mm-dd" />
+
+      <label for="DOB">Date of Birth:</label>
+      <select name="Month" id="DOB" required>
+        <option value="Month">Month</option>
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="Novermber">Novermber</option>
+        <option value="December">December</option>
+      </select>
+
+      <select name="Day" id="Day" required>
+        <option value="Day">Day</option>
+        <option value="Sunday">Sunday</option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+      </select>
+
+      <select name="Year" id="Year" required>
+        <option value="Year">Year</option>
+        <option value="1990">1990</option>
+        <option value="1991">1991</option>
+        <option value="1992">1992</option>
+        <option value="1993">1993</option>
+        <option value="1994">1994</option>
+        <option value="1995">1995</option>
+        <option value="1996">1996</option>
+        <option value="1997">1997</option>
+        <option value="1998">1998</option>
+        <option value="1999">1999</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+        <option value="2004">2004</option>
+        <option value="2005">2005</option>
+        <option value="2006">2006</option>
+        <option value="2007">2007</option>
+        <option value="2008">2008</option>
+        <option value="2009">2009</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option></select
+      ><br />
+
+      <label for="gender">Gender:</label>
+      <select name="gender" id="gender" required>
+        <option value="Choose a gender">Choose a gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Others">Others</option></select
+      ><br />
+
+      <!-- <label for="checked">markrd your hobby</label>
+      <input
+        type="checkbox"
+        id="football"
+        name="hobby"
+        value="football" 
+      />football
+      <input type="checkbox" id="chess" name="hobby" value="chess" />chess
+      <input
+        type="checkbox"
+        id="reading-books"
+        name="hobby"
+        value="reading-books"  
+      />
+      reading-books
+      <input type="checkbox" id="ride" name="hobby" value="ride" />ride -->
+
+      <h3>Account information</h3>
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Your email address will be your user name"
+        value=""
+      /><br />
+
+      <label for="reTypeMail">Re-type Email:</label>
+      <input
+        type="email"
+        name="reTypeMail"
+        id="reTypeMail"
+        value=""
+        placeholder=""
+      /><br />
+
+      <label for="password">password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        value=""
+        placeholder="Min-8 Characters,1 Number,Case-senstive"
+      /><br />
+
+      <label for="reTypePassword">Re-type password:</label>
+      <input
+        type="password"
+        name="reTypePassword"
+        id="reTypePassword"
+      /><br />
+
+      <label for="question">Security Question:</label>
+      <select name="S_question" id="question">
+        <option value="your favourite color name?">
+          your favourite color name?
+        </option>
+        <option value="your favourite mentor name?">
+          your favourite mentor name?
+        </option>
+        <option value="your favourite flower name?">
+          your favourite flower name?
+        </option>
+        <option value="your Best Friend name?">your Best Friend name?</option>
+        <option value="your favourite School Teacher name?">
+          your favourite School Teacher name?
+        </option>
+        <option value="your Hobby name?">your Hobby name?</option>
+        <option value="your favourite Number?">your favourite Number?</option>
+        <option value="your Pet name?">your Pet name?</option></select
+      ><br />
+
+      <label for="answer">Security Answer:</label>
+      <input
+        type="text"
+        name="answer"
+        id="answer"
+        placeholder="Not case-sensitive"
+      /><br />
+
+      <h3>Contect information</h3>
+      <label for="address">Address:</label>
+      <input
+        type="text"
+        name="address"
+        id="address"
+        value=""
+        placeholder=""
+      /><br />
+
+      <label for="city">City</label>
+      <input type="text" name="city" id="city" value="bikaner" placeholder="" /><br />
+
+      <label for="state">State:</label>
+      <select name="state" id="state" required>
+        <option value="Choose a state">Choose a state</option>
+        <option value="Andhara Pradesh">Andhara Pradesh</option>
+        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+        <option value="Assam">Assam</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Chattisgarh">Chattisgarh</option>
+        <option value="Goa">Goa</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Haryana">Haryana</option>
+        <option value="Himachal Pradesh">Himachal Pradesh</option>
+        <option value="Jharkhand">Jharkhand</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Madhya Pradesh">Madhya Pradesh</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Manipur">Manipur</option>
+        <option value="Meghalaya">Meghalaya</option>
+        <option value="Mizoram">Mizoram</option>
+        <option value="Nagaland">Nagaland</option>
+        <option value="Odisha">Odisha</option>
+        <option value="Panjab">Panjab</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Sikkim">Sikkim</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Telangana">Telangana</option>
+        <option value="Tripura">Tripura</option>
+        <option value="Uttar Pradesh">Uttar Pradesh</option>
+        <option value="Uttarakhand">Uttarakhand</option>
+        <option value="West Bengal">West Bengal</option></select
+      ><br />
+
+      <label for="zipCode">Zip Code:</label>
+      <input
+        type="number"
+        maxlength="5"
+        name="zipCode"
+        id="zipCode"
+        value=""
+        placeholder=""
+      />
+      <input type="text" value="Optional" placeholder="" readonly /><br />
+
+      <label for="Tel">Phone:</label>
+      <input
+        type="tel"
+        name="tel"
+        id="tel"
+        placeholder="No spaces or dashes"
+        maxlength="10"
+      />
+
+      <label for="medium"></label>
+      <select name="medium" id="medium">
+        <option value="mobile">mobile</option>
+        <option value="lan-line">lan-line</option>
+
+        <option value="tele-phone">tele-phone</option></select
+      ><br />
+
+      <input type="submit" value="submit" />
+    </form>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      console.log(params.get("f_name"));
+
+      let form = document.forms.my_task;
+      console.log(form);
+
+      let elem = form.elements.f_name;
+
+      elem.value = params.get("f_name");
+
+      console.log(f_name.type);
+      console.log(f_name.value);
+      console.log(f_name.id);
+      console.log(f_name.autofocus);
+
+      let lname = form.elements.l_name;
+      lname.value = params.get("l_name");
+
+      // let date = form.elements.date;
+      // date.value = params.get("date");
+
+
+      
+      let month = form.elements.Month;
+      month.value = params.get("Month");
+
+      let day = form.elements.Day;
+      day.value = params.get("Day");
+      
+
+      let year = form.elements.Year;
+      year.value = params.get("Year");
+
+
+
+      let email = form.elements.email;
+      email.value = params.get("email");
+
+      let againEmail = form.elements.reTypeMail;
+      againEmail.value = params.get("reTypeMail");
+
+      let password = form.elements.password;
+      password.value = params.get("password");
+
+      let rePassword = form.elements.reTypePassword;
+      rePassword.value = params.get("reTypePassword");
+
+      let sQues = form.elements.S_question;
+      sQues.value = params.get("S_question");
+
+      let ans = form.elements.answer;
+      ans.value = params.get("answer");
+
+      let add = form.elements.address;
+      add.value = params.get("address");
+
+      let city = form.elements.city;
+      console.log(city);
+      city.value = params.get("city");
+
+      
+      
+
+      let state = form.elements.state;
+      state.value = params.get("state");
+
+      let zipcode = form.elements.zipCode;
+      zipcode.value = params.get("zipCode");
+
+      let tel = form.elements.tel;
+      tel.value = params.get("tel");
+
+      // let medium = form.elements.medium;
+      // medium.value = params.get('medium');
+
+      // select.options
+      // select.value
+      // select.selectedIndex
+      // use select and option id = medium
+
+      
+      
+      // for checkbox
+
+      // let hobbyelems = form.elements.hobby;
+
+      // const selectedHobbies = params.getAll("hobby");
+
+      // selectedHobbies.forEach((hobbie) => {
+      //   document.getElementById(hobbie).checked = true;
+      // });
+
+
+
+
+
+      // console.log('params.getAll("hobby") :>> ', params.getAll("hobby"));
+      // hobbyelems.checked = true;
+
+      // for select or option
+      // medium.option[1].selected = select.options.medium;
+      // medium.value = param.get("medium");
+
+     
+      // form.gender.options[2].selected = true;
+      // gender.selectedIndex = 2;
+      // console.log("gender", gender.value);
+      let gender = form.elements.gender;
+      gender.value = params.get("gender");
+
+      let medium = form.elements.medium;
+      medium.value = params.get("medium");
+
+
+
+      // form.medium = new Option("abc" , "abc",false ,false);
+      console.log( form.medium);
+    </script>
+
+      <!-- medium.selectedIndex = 1; -->
+      <!-- medium.value = "mobile"; -->
+
+      <!-- colsole.log(medium.value);
+      console.log(selectedIndex);
+       console.log(); -->
+    </script>
+  </body>
+</html>
