@@ -6,21 +6,43 @@
     <title>Document</title>
   </head>
   <body>
-    <form name="my">
+    <form>
       <select name="fruits" id="select">
         <option value="apple">Apple</option>
         <option value="pear">Pear</option>
         <option value="banana">Banana</option>
       </select>
 
+      <input type="radio" name="age" value="10" /> under 10
+      <input type="radio" name="age" value="20" /> under 20
+      <input type="radio" name="age" value="30" /> under 30
+
       <input type="submit" value="submit" />
     </form>
 
     <script>
-      let form = document.forms.my;
-      form.select.options[2].selected = true;
-      select.selectedIndex = 2;
-      console.log(select.value);
+      // let form = document.forms.my;
+      // form.select.options[2].selected = true;
+      // select.selectedIndex = 2;
+      // console.log(select.value);
+
+      // const params = new URLSearchParams(window.location.search);
+      // console.log(params.get("age"));
+
+      // let elem = form.get.age;
+
+      let form = document.forms[0];
+
+      let age = form.elements.age;
+
+      // console.log(age);
+
+      // console.log(age[1].value);
+      // console.log(age[1].type);
+
+      console.log(document.forms[0].elements.age[0].value);
+
+      // ageElements.value = param.get("age");
     </script>
   </body>
 </html>

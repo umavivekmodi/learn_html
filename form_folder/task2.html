@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task form2</title>
+  </head>
+  <body>
+    <form>
+      <label for="email">Email ID:</label>
+      <input type="email" name="email" value="Email ID" id="email" /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" value="" id="password" /><br />
+
+      <input
+        type="checkbox"
+        name="termsandcondition"
+        id="termsandcondition"
+        value="true"
+      />
+      Terms & Conditon <br />
+
+      <input type="submit" name="button" id="button" value="button" />
+    </form>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      console.log(params);
+
+      let form = document.forms[0];
+      console.log(form);
+
+      let email = form.elements.email;
+      console.log(email);
+
+      email.value = params.get("email");
+
+      console.log(email.value);
+
+      let password = form.elements.password;
+      console.log(password);
+
+      password.value = params.get("password");
+      console.log(password.value);
+
+      let checked = form.elements.termsandcondition;
+      checked.checked = params.get("termsandcondition") == "true";
+      console.log(checked);
+    </script>
+  </body>
+</html>
