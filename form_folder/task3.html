@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input form task3</title>
+  </head>
+  <body>
+    <form action="" name="task3">
+      <label for="name">Enter your name:</label>
+      <input
+        type="text"
+        name="full_name"
+        value="full_name"
+        id="full_name"
+      /><br />
+
+      <label for="DOB">Enter your DOB:</label>
+      <input type="date" name="DOB" value="DOB" id="DOB" /><br />
+
+      <label for="gender">Gender:</label>
+      <input type="radio" name="gender" value="male" />Male
+      <input type="radio" name="gender" value="Female" /> Female
+      <input type="radio" name="gender" value="Others" /> Others<br />
+
+      <label for="email"> Enter your Email:</label>
+      <input type="email" name="email" value="email" id="email" /><br />
+
+      <label for="study">Education Qualification:</label>
+      <input type="checkbox" name="study" id="ten" value="ten" />10th
+      <input type="checkbox" name="study" id="twelve" value="twelve" />12th
+      <input type="checkbox" name="study" id="ug" value="ug" />UG
+      <input type="checkbox" name="study" id="pg" value="pg" />PG
+      <input type="checkbox" name="study" id="phd" value="phd" />Phd
+      <input type="checkbox" name="study" id="it" value="it" />IT
+
+      <br />
+
+      <!-- <label for="education">Education Qualification:</label>
+      <select name="education" id="education">
+        <option value="10th">10th</option>
+        <option value="12th">12th</option>
+        <option value="UG">UG</option>
+        <option value="PG">PG</option>
+        <option value="Phd">Phd</option></select
+      ><br /> -->
+
+      <label for="language">languages you know:</label>
+      <select name="language" id="language">
+        <option value="Hindi">Hindi</option>
+        <option value="English">English</option>
+        <option value="Urdu">Urdu</option>
+        <option value="Marathi">Marathi</option>
+        <option value="Gujrati">Gujrati</option>
+        <option value="Telgu">Telgu</option>
+        <option value="Malyalam">Malyalam</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Franch">Franch</option>
+        <option value="Chinease">Chinease</option>
+        <option value="Marwadi">Maradi</option></select
+      ><br />
+
+      <label for="color">Pick your favourite color:</label>
+      <select name="color" id="color">
+        <optgroup label="Red">
+          <option value="Tomato Red">Tomato Red</option>
+          <option value="Cherry Red">Cherry Red</option>
+          <option value="Poppy Red">Poppy Red</option>
+          <option value="Brick Red">Brick Red</option>
+          <option value="Ruby Red">Ruby Red</option>
+          <option value="Wine Red">Wine Red</option>
+          <option value="Maroon Red">Maroon Red</option>
+          <option value="Strawberry Red">Strawberry Red</option>
+        </optgroup>
+
+        <option value="Blue">Blue</option>
+        <option value="Green">Green</option>
+        <option value="Yellow">Yellow</option>
+        <option value="Black">Black</option>
+        <option value="Brown">Brown</option>
+        <option value="Voilet">Voilet</option>
+        <option value="Orange">Orange</option>
+        <option value="White">White</option>
+        <option value="Pink">Pink</option>
+        <option value="Grey">Grey</option>
+        <option value="Sky Blue">Sky Blue</option></select
+      ><br />
+
+      <label for="PhoneNumber">Enter your Phone Number:</label>
+      <input type="tel" name="tel" id="tel" value="tel" maxlength="10" /><br />
+
+      <input type="submit" name="Button" id="Button" value="Button" />
+
+      <script>
+        const params = new URLSearchParams(window.location.search);
+        console.log(params);
+
+        const forms = document.forms.task3;
+        console.log(forms);
+
+        const full_name = forms.elements.full_name;
+        console.log(full_name);
+        full_name.value = params.get("full_name");
+
+        const DOB = forms.elements.DOB;
+        console.log(DOB);
+        DOB.value = params.get("DOB");
+
+        const gender = forms.elements.gender;
+        console.log(gender);
+        gender.value = params.get("gender");
+
+        const email = forms.elements.email;
+        console.log(email);
+        email.value = params.get("email");
+
+        const study = forms.elements.study;
+        // console.log(study.name);
+
+        let selectedValues = params.getAll("study");
+        console.log(selectedValues);
+        console.log(study);
+        // console.log(study.value);
+        study.forEach((element) => {
+          element.checked = selectedValues.includes(element.value);
+          console.log(element.value);
+        });
+
+        const language = forms.elements.language;
+        console.log(language);
+        language.value = params.get("language");
+
+        const color = forms.elements.color;
+        console.log(color);
+        color.value = params.get("color");
+
+        const tel = forms.elements.tel;
+        console.log(tel);
+        tel.value = params.get("tel");
+      </script>
+    </form>
+  </body>
+</html>
